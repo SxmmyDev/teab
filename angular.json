@@ -27,9 +27,13 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css",
+              "node_modules/swiper/swiper.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
+            ]
           },
           "configurations": {
             "production": {
