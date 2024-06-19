@@ -6,12 +6,14 @@ import { PricingComponent } from './pages/pricing/pricing.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { TestimoniesComponent } from './pages/testimonies/testimonies.component';
 import { TeashopComponent } from './pages/teashop/teashop.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'products/:id', component: ProductPageComponent },
     { path: 'pricing', component: PricingComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'teashop', component: TeashopComponent },

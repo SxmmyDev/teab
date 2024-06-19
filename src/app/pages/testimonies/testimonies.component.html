@@ -1,1 +1,23 @@
-<p>testimonies works!</p>
+<div class="clients_section layout_padding">
+    <div id="custum_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            @for (t of testimonies; track $index) {
+                <div class="carousel-item  {{ $index == 0 ? 'active' : '' }}">
+                    <div class="container">
+                        <h1 class="what_taital">Qué Dicen Nuestros Clientes</h1>
+                        <p class="clients_text">{{ t.content }}</p>
+                        <div class="client_img"><img src="{{ t.avatarUrl }}" class="rounded-circle" alt="Testimonio Cliente" style="max-width: 150px; height: auto;"></div>
+                        <h1 class="louis_text">{{ t.name }}</h1>
+                        <!-- <h1 class="smyth_text">{{ t.role }}</h1> -->
+                        <div class="border"></div>
+                    </div>
+                </div>
+            }     
+        <a class="carousel-control-prev" href="#custum_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#custum_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</div>
