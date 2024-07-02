@@ -13,6 +13,6 @@ export class TestimoniesService {
   private apiUrl = environment.apiUrl
 
   getTestimonies(): Observable<ITestimonie> {
-      return this.http.get<ITestimonie>(`${this.apiUrl}/testimonies`);
+      return this.http.get<ITestimonie>(`${this.apiUrl}/testimonies`)
   }
 }
