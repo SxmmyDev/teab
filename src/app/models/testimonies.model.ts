@@ -6,3 +6,5 @@ export interface ITestimonie {
     content:   string;
     id:        string;
 }
+
+// Testimonial Model
