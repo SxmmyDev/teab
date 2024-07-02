@@ -8,3 +8,5 @@ export interface ITea {
     price:       number;
     id:          string;
 }
+
+// Model Tea
